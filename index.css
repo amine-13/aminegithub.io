@@ -1,0 +1,88 @@
+#conteneur{
+    background-image:url("Accueil/fond.JPEG");
+    background-size: cover;
+    background-color: rgb(255, 255, 255, 5)
+    
+}
+/* Réglage de la barre du menu[Acceil]*/
+#menu{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    background-color: rgb(255,255,255);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#menu a{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none; 
+}
+#menu a li {
+    text-decoration: none;
+    position: relative;
+    color: darkred;
+    font-size:25px;
+    font-weight: 300;
+    font-family: sans-serif;    
+    display: block;
+    overflow:hidden;
+    transition:1s all;
+    padding: 10px 12px;
+    text-transform: capitalize;
+}
+#menu a li:before{
+    content: '';
+    width: 40px;
+    position: absolute;
+    border-bottom: 8px solid darkred;
+    bottom: 0;
+    right: 300px;
+    transition: 1s all;
+}
+#menu a li:hover:before{
+    right: 0;
+}
+/* Réglage de la la taille de la photo du logo[bay-voyage]*/
+.logo{
+    margin: 0;
+    border-radius: 300px;
+    width:90px;
+    height:70px;
+    float: left;
+
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(255,255,255);
+    color: rgba(139, 0, 0, 0.692);
+    text-align: center;
+    border-radius: 100px 50px 100px 50px;
+}
+.centre {
+    text-align: center;
+    background-color: rgba(255,255,255, .5); 
+    padding: 60px
+}
+.ab{
+    font-size: 35px
+}
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("Accueil/fond.JPEG")  ;
+    background-size: cover;
+    animation-name: diapo;
+    animation-timing-function: linear;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;    
+    
+}
+
+
+
